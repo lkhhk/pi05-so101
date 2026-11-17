@@ -29,14 +29,14 @@ py -3.12 -m venv .venv
 
 历史环境采用 LeRobot 0.4.4 源码、PEFT 0.21.3、OpenPI 兼容 Transformers 4.53.3、tokenizers 0.21.4。训练还使用了每四循环一次优化器更新的累积补丁、本地分词器、兼容处理器配置和训练集统计。不能直接把 Windows 0.7.0 客户端依赖当作训练环境。
 
-本仓库保留配置与启动记录，未包含完整的云端环境锁文件、训练累积补丁或可下载模型，因此不声称可从零一键重训。细节见 `so101-block-box-lora-20261117.md`。云端 shell 脚本中的 `/root/autodl-tmp` 和模型目录需与实际部署对应；服务器名 `your-gpu-host.example.com`、SSH 端口 `2222` 均为占位值。
+本仓库保留配置与启动记录，并通过 Release 提供 020000 LoRA 及处理器。完整底座、云端环境锁文件和训练累积补丁未包含，因此不声称可从零一键重训。细节见 `so101-block-box-lora-20261117.md`。云端 shell 脚本中的 `/root/autodl-tmp` 和模型目录需与实际部署对应；服务器名 `your-gpu-host.example.com`、SSH 端口 `2222` 均为占位值。
 
 ## 设备与模型
 
 - 方块任务使用 SO-101 从臂、6 维关节、身体关节为度、夹爪为百分比；历史端口为 COM6。
 - front=1、wrist=2 是本次实验的相机编号，换机或重插后需查看实际画面。
 - 个人录制校准 `official_block_follower.json` 不随仓库分发，需为自己的设备准备匹配校准。
-- 原 IRA 底座、020000 LoRA 和处理器需自行获取并配置；共享处理器是本次对照条件的一部分。
+- 原 IRA 底座需自行获取；020000 LoRA 和配套处理器可从 [Release](https://github.com/lkhhk/pi05-so101/releases/tag/blockbox-lora-020000) 下载。共享处理器是本次对照条件的一部分，需按实际路径配置。
 - 自动复位为关节空间插值，无环境避障能力；正式试验仍需人工摆放物体和标注。
 
 ## 数据与结果
