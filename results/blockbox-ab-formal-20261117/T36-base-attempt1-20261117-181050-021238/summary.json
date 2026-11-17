@@ -1,0 +1,121 @@
+{
+  "execute": true,
+  "live_observation": false,
+  "status": "trial_finished",
+  "frames": 900,
+  "refills": 59,
+  "queue_underflows": 0,
+  "mode": "guided_rtc",
+  "result_dir": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T36-base-attempt1-20261117-181050-021238",
+  "duration_s": 30.0,
+  "deployment": {
+    "ready": true,
+    "protocol": "blockbox-guided-rtc-v1",
+    "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+    "rtc_enabled": true,
+    "rtc_mode": "guided",
+    "provenance": {
+      "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+      "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+      "adapter_applied": false,
+      "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+      "processor_sha256": {
+        "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+        "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+        "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+        "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+      },
+      "config": {
+        "dtype": "bfloat16",
+        "chunk_size": "50",
+        "n_action_steps": "50",
+        "num_inference_steps": "10",
+        "use_peft": "False"
+      },
+      "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+    },
+    "action_shape": [
+      50,
+      6
+    ],
+    "fps": 30,
+    "state_units": "body_degrees_gripper_percent",
+    "action_mean": [
+      -14.52517778383368,
+      -20.65828011277637,
+      31.600665618657768,
+      63.44759647874239,
+      5.678923399326703,
+      19.895546548304065
+    ],
+    "action_std": [
+      14.87951117966291,
+      30.356983715778746,
+      21.179953685246545,
+      16.643614360015317,
+      11.25396452377756,
+      14.086439423423537
+    ]
+  },
+  "preflight_latency_budget_s": 0.5469999999913853,
+  "admitted_preflight_samples_s": [
+    0.5469999999913853,
+    0.4370000000053551,
+    0.35999999998603016,
+    0.32800000000861473,
+    0.4370000000053551
+  ],
+  "initial_state": [
+    -11.692307472229004,
+    -66.54945373535156,
+    80.43955993652344,
+    54.63736343383789,
+    0.3956044018268585,
+    2.5486249923706055
+  ],
+  "reference_state": {
+    "state": [
+      -12.219779968261719,
+      -67.69230651855469,
+      79.56044006347656,
+      53.67033004760742,
+      0.8351648449897766,
+      2.079141616821289
+    ],
+    "tolerance": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "joints": [
+      "shoulder_pan",
+      "shoulder_lift",
+      "elbow_flex",
+      "wrist_flex",
+      "wrist_roll",
+      "gripper"
+    ],
+    "created": "2026-11-17T17:01:06.466989",
+    "paired_with": "T35"
+  },
+  "motion_start_ns": 196834546000000,
+  "playback_s": 30.0,
+  "end_mode": "hold_measured_pose",
+  "final_state": {
+    "shoulder_pan": -10.901098901098901,
+    "shoulder_lift": -7.208791208791209,
+    "elbow_flex": 54.15384615384615,
+    "wrist_flex": 32.30769230769231,
+    "wrist_roll": 2.32967032967033,
+    "gripper": 25.352112676056336
+  },
+  "motor_commands_sent": 900,
+  "max_tick_work_s": 0.01600000000325963,
+  "guided_roundtrip_mean_s": 0.3716363636362296,
+  "guided_roundtrip_p95_s": 0.44974999999976717,
+  "guided_roundtrip_max_s": 0.6719999999913853,
+  "request_bytes_mean": 147931.86764705883
+}

@@ -1,0 +1,27 @@
+# Large/local experiment assets
+.venv/
+venvs/
+vendor/
+models/
+backups/
+logs/
+outputs/
+__pycache__/
+*.py[cod]
+*.log
+*.safetensors
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.parquet
+*.tar.gz
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+# New recordings stay local; checked-in curated media are explicitly allowed.
+*.mp4
+!media/*.mp4
+!results/pi05-libero-success.mp4

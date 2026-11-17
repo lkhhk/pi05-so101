@@ -1,0 +1,99 @@
+{
+  "execute": true,
+  "live_observation": false,
+  "status": "trial_finished",
+  "frames": 1800,
+  "refills": 119,
+  "queue_underflows": 0,
+  "mode": "guided_rtc",
+  "result_dir": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T02-lora-attempt1-20261117-172033-033547",
+  "deployment": {
+    "ready": true,
+    "protocol": "blockbox-guided-rtc-v1",
+    "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+    "rtc_enabled": true,
+    "rtc_mode": "guided",
+    "action_shape": [
+      50,
+      6
+    ],
+    "fps": 30,
+    "state_units": "body_degrees_gripper_percent",
+    "action_mean": [
+      -14.52517778383368,
+      -20.65828011277637,
+      31.600665618657768,
+      63.44759647874239,
+      5.678923399326703,
+      19.895546548304065
+    ],
+    "action_std": [
+      14.87951117966291,
+      30.356983715778746,
+      21.179953685246545,
+      16.643614360015317,
+      11.25396452377756,
+      14.086439423423537
+    ]
+  },
+  "preflight_latency_budget_s": 0.5460000000020955,
+  "admitted_preflight_samples_s": [
+    0.5460000000020955,
+    0.42199999999138527,
+    0.4220000000204891,
+    0.375,
+    0.34399999998277053
+  ],
+  "initial_state": [
+    -12.131868362426758,
+    -65.31867980957031,
+    81.14286041259766,
+    53.31867980957031,
+    1.274725317955017,
+    2.5486249923706055
+  ],
+  "reference_state": {
+    "state": [
+      -12.571428298950195,
+      -66.28571319580078,
+      80.0879135131836,
+      53.4945068359375,
+      0.7472527623176575,
+      2.079141616821289
+    ],
+    "tolerance": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ],
+    "joints": [
+      "shoulder_pan",
+      "shoulder_lift",
+      "elbow_flex",
+      "wrist_flex",
+      "wrist_roll",
+      "gripper"
+    ],
+    "created": "2026-11-17T17:01:06.466989",
+    "paired_with": "T01"
+  },
+  "playback_s": 60.0,
+  "end_mode": "hold_measured_pose",
+  "final_state": {
+    "shoulder_pan": -5.274725274725275,
+    "shoulder_lift": -16.703296703296704,
+    "elbow_flex": 28.21978021978022,
+    "wrist_flex": 63.34065934065934,
+    "wrist_roll": 18.065934065934066,
+    "gripper": 30.918846411804157
+  },
+  "motor_commands_sent": 1800,
+  "max_tick_work_s": 0.01600000000325963,
+  "guided_roundtrip_mean_s": 0.34372580645281087,
+  "guided_roundtrip_p95_s": 0.42200000001612353,
+  "guided_roundtrip_max_s": 0.5460000000020955,
+  "request_bytes_mean": 152356.68253968254
+}

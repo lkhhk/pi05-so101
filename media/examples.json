@@ -1,0 +1,18 @@
+[
+  {
+    "variant": "base",
+    "trial": "T22",
+    "source_trial": "T22-base-attempt1-20261117-175612-266141",
+    "video": "media/base-success.mp4",
+    "completion_s": 14.625,
+    "selection": "first successful 30-second trial for this model; examples are from different scenes, not a paired speed comparison"
+  },
+  {
+    "variant": "lora",
+    "trial": "T03",
+    "source_trial": "T03-lora-attempt1-20261117-173034-546071",
+    "video": "media/lora-success.mp4",
+    "completion_s": 17.235,
+    "selection": "first successful 30-second trial for this model; examples are from different scenes, not a paired speed comparison"
+  }
+]

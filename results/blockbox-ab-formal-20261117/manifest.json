@@ -1,0 +1,4387 @@
+{
+  "created": "2026-11-17T17:02:18.641284",
+  "duration_s": 30,
+  "success_definition": "Within 30 seconds, without assistance, place the whole block inside the box and release the gripper; select success during execution to stop and timestamp completion.",
+  "trials": [
+    {
+      "id": "T01",
+      "scene": "S01",
+      "repeat": 1,
+      "variant": "base",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T01-base-attempt1-20261117-170219-080994",
+          "started_at": "20261117-170219-080994",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "process_exit_code": 1,
+          "outcome": "infrastructure",
+          "reason": "首个续块往返0.828秒，下一次请求剩余前缀不足，约1.4秒自动停止；不构成完整模型评估",
+          "grasped": null,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T17:03:33.202129",
+          "duration_s": 60
+        },
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T01-base-attempt2-20261117-170520-615622",
+          "started_at": "20261117-170520-615622",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "process_exit_code": 1,
+          "outcome": "infrastructure",
+          "reason": "第二次尝试续块往返1.031秒，64帧后因剩余前缀不足自动停止；GPU仅0.290秒，排查传输与本机开销",
+          "grasped": null,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T17:06:47.747232",
+          "duration_s": 60
+        },
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T01-base-attempt3-20261117-171740-017967",
+          "started_at": "20261117-171740-017967",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "process_exit_code": 1,
+          "outcome": "infrastructure",
+          "reason": "RuntimeError('Insufficient remaining actions for measured latency')",
+          "grasped": false,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T17:18:28.141493",
+          "duration_s": 60
+        },
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T01-base-attempt4-20261117-171841-268940",
+          "started_at": "20261117-171841-268940",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": false,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T17:20:08.798446",
+          "duration_s": 60
+        }
+      ]
+    },
+    {
+      "id": "T02",
+      "scene": "S01",
+      "repeat": 1,
+      "variant": "lora",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T02-lora-attempt1-20261117-172033-033547",
+          "started_at": "20261117-172033-033547",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "process_exit_code": 0,
+          "outcome": "success",
+          "reason": "",
+          "grasped": true,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T17:22:02.508887",
+          "duration_s": 60
+        }
+      ]
+    },
+    {
+      "id": "T03",
+      "scene": "S01",
+      "repeat": 2,
+      "variant": "lora",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T03-lora-attempt1-20261117-173034-546071",
+          "started_at": "20261117-173034-546071",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "success",
+          "reason": "Operator selected success during execution",
+          "completion_s": 17.235,
+          "completion_time_source": "success_button_monotonic_clock",
+          "success_clicked_ns": 194435281000000,
+          "motion_start_ns": 194418046000000,
+          "grasped": null,
+          "labelled_at": "2026-11-17T17:31:07.068778"
+        }
+      ]
+    },
+    {
+      "id": "T04",
+      "scene": "S01",
+      "repeat": 2,
+      "variant": "base",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T04-base-attempt1-20261117-173136-277585",
+          "started_at": "20261117-173136-277585",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": false,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T17:32:33.945372"
+        }
+      ]
+    },
+    {
+      "id": "T05",
+      "scene": "S02",
+      "repeat": 1,
+      "variant": "lora",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T05-lora-attempt1-20261117-173307-137357",
+          "started_at": "20261117-173307-137357",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": true,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T17:34:00.016418"
+        }
+      ]
+    },
+    {
+      "id": "T06",
+      "scene": "S02",
+      "repeat": 1,
+      "variant": "base",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T06-base-attempt1-20261117-173438-437950",
+          "started_at": "20261117-173438-437950",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": false,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T17:35:28.909497"
+        }
+      ]
+    },
+    {
+      "id": "T07",
+      "scene": "S02",
+      "repeat": 2,
+      "variant": "base",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T07-base-attempt1-20261117-173553-576946",
+          "started_at": "20261117-173553-576946",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": false,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T17:37:11.950771"
+        }
+      ]
+    },
+    {
+      "id": "T08",
+      "scene": "S02",
+      "repeat": 2,
+      "variant": "lora",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T08-lora-attempt1-20261117-173737-829925",
+          "started_at": "20261117-173737-829925",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": false,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T17:38:31.355624"
+        }
+      ]
+    },
+    {
+      "id": "T09",
+      "scene": "S03",
+      "repeat": 1,
+      "variant": "base",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T09-base-attempt1-20261117-173851-585545",
+          "started_at": "20261117-173851-585545",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": false,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T17:39:47.995072"
+        }
+      ]
+    },
+    {
+      "id": "T10",
+      "scene": "S03",
+      "repeat": 1,
+      "variant": "lora",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T10-lora-attempt1-20261117-174003-021879",
+          "started_at": "20261117-174003-021879",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "success",
+          "reason": "Operator selected success during execution",
+          "completion_s": 24.344,
+          "completion_time_source": "success_button_monotonic_clock",
+          "success_clicked_ns": 195010937000000,
+          "motion_start_ns": 194986593000000,
+          "grasped": null,
+          "labelled_at": "2026-11-17T17:40:42.514058"
+        }
+      ]
+    },
+    {
+      "id": "T11",
+      "scene": "S03",
+      "repeat": 2,
+      "variant": "lora",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T11-lora-attempt1-20261117-174142-671949",
+          "started_at": "20261117-174142-671949",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": false,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T17:42:33.371274"
+        }
+      ]
+    },
+    {
+      "id": "T12",
+      "scene": "S03",
+      "repeat": 2,
+      "variant": "base",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T12-base-attempt1-20261117-174440-159038",
+          "started_at": "20261117-174440-159038",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": false,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T17:45:31.383650"
+        }
+      ]
+    },
+    {
+      "id": "T13",
+      "scene": "S04",
+      "repeat": 1,
+      "variant": "lora",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T13-lora-attempt1-20261117-174549-713983",
+          "started_at": "20261117-174549-713983",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": true,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T17:46:44.936374"
+        }
+      ]
+    },
+    {
+      "id": "T14",
+      "scene": "S04",
+      "repeat": 1,
+      "variant": "base",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T14-base-attempt1-20261117-174656-371368",
+          "started_at": "20261117-174656-371368",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": false,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T17:48:02.250082"
+        }
+      ]
+    },
+    {
+      "id": "T15",
+      "scene": "S04",
+      "repeat": 2,
+      "variant": "base",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T15-base-attempt1-20261117-174815-724628",
+          "started_at": "20261117-174815-724628",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": false,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T17:49:12.659170"
+        }
+      ]
+    },
+    {
+      "id": "T16",
+      "scene": "S04",
+      "repeat": 2,
+      "variant": "lora",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T16-lora-attempt1-20261117-174924-960046",
+          "started_at": "20261117-174924-960046",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": false,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T17:50:16.566860"
+        }
+      ]
+    },
+    {
+      "id": "T17",
+      "scene": "S05",
+      "repeat": 1,
+      "variant": "base",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T17-base-attempt1-20261117-175047-166306",
+          "started_at": "20261117-175047-166306",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": false,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T17:51:42.171700"
+        }
+      ]
+    },
+    {
+      "id": "T18",
+      "scene": "S05",
+      "repeat": 1,
+      "variant": "lora",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T18-lora-attempt1-20261117-175159-530448",
+          "started_at": "20261117-175159-530448",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": false,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T17:52:55.005250"
+        }
+      ]
+    },
+    {
+      "id": "T19",
+      "scene": "S05",
+      "repeat": 2,
+      "variant": "lora",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T19-lora-attempt1-20261117-175309-963704",
+          "started_at": "20261117-175309-963704",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": false,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T17:54:02.110341"
+        }
+      ]
+    },
+    {
+      "id": "T20",
+      "scene": "S05",
+      "repeat": 2,
+      "variant": "base",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T20-base-attempt1-20261117-175417-947436",
+          "started_at": "20261117-175417-947436",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": false,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T17:55:07.831978"
+        }
+      ]
+    },
+    {
+      "id": "T21",
+      "scene": "S06",
+      "repeat": 1,
+      "variant": "lora",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T21-lora-attempt1-20261117-175533-195798",
+          "started_at": "20261117-175533-195798",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "success",
+          "reason": "Operator selected success during execution",
+          "completion_s": 11.656,
+          "completion_time_source": "success_button_monotonic_clock",
+          "success_clicked_ns": 195927843000000,
+          "motion_start_ns": 195916187000000,
+          "grasped": null,
+          "labelled_at": "2026-11-17T17:55:59.553010"
+        }
+      ]
+    },
+    {
+      "id": "T22",
+      "scene": "S06",
+      "repeat": 1,
+      "variant": "base",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T22-base-attempt1-20261117-175612-266141",
+          "started_at": "20261117-175612-266141",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "success",
+          "reason": "Operator selected success during execution",
+          "completion_s": 14.625,
+          "completion_time_source": "success_button_monotonic_clock",
+          "success_clicked_ns": 195970390000000,
+          "motion_start_ns": 195955765000000,
+          "grasped": null,
+          "labelled_at": "2026-11-17T17:56:42.252050"
+        }
+      ]
+    },
+    {
+      "id": "T23",
+      "scene": "S06",
+      "repeat": 2,
+      "variant": "base",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T23-base-attempt1-20261117-175656-694177",
+          "started_at": "20261117-175656-694177",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": false,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T17:57:50.243067"
+        }
+      ]
+    },
+    {
+      "id": "T24",
+      "scene": "S06",
+      "repeat": 2,
+      "variant": "lora",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T24-lora-attempt1-20261117-175801-697121",
+          "started_at": "20261117-175801-697121",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "success",
+          "reason": "Operator selected success during execution",
+          "completion_s": 10.594,
+          "completion_time_source": "success_button_monotonic_clock",
+          "success_clicked_ns": 196075140000000,
+          "motion_start_ns": 196064546000000,
+          "grasped": null,
+          "labelled_at": "2026-11-17T17:58:26.917694"
+        }
+      ]
+    },
+    {
+      "id": "T25",
+      "scene": "S07",
+      "repeat": 1,
+      "variant": "base",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T25-base-attempt1-20261117-175858-968145",
+          "started_at": "20261117-175858-968145",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": true,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T17:59:49.204382"
+        }
+      ]
+    },
+    {
+      "id": "T26",
+      "scene": "S07",
+      "repeat": 1,
+      "variant": "lora",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T26-lora-attempt1-20261117-175959-180423",
+          "started_at": "20261117-175959-180423",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "success",
+          "reason": "Operator selected success during execution",
+          "completion_s": 10.296,
+          "completion_time_source": "success_button_monotonic_clock",
+          "success_clicked_ns": 196194171000000,
+          "motion_start_ns": 196183875000000,
+          "grasped": null,
+          "labelled_at": "2026-11-17T18:00:25.758911"
+        }
+      ]
+    },
+    {
+      "id": "T27",
+      "scene": "S07",
+      "repeat": 2,
+      "variant": "lora",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T27-lora-attempt1-20261117-180040-452314",
+          "started_at": "20261117-180040-452314",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": false,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T18:01:32.314688"
+        }
+      ]
+    },
+    {
+      "id": "T28",
+      "scene": "S07",
+      "repeat": 2,
+      "variant": "base",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T28-base-attempt1-20261117-180149-099717",
+          "started_at": "20261117-180149-099717",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": false,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T18:02:39.073120"
+        }
+      ]
+    },
+    {
+      "id": "T29",
+      "scene": "S08",
+      "repeat": 1,
+      "variant": "lora",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T29-lora-attempt1-20261117-180255-925343",
+          "started_at": "20261117-180255-925343",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "success",
+          "reason": "Operator selected success during execution",
+          "completion_s": 10.703,
+          "completion_time_source": "success_button_monotonic_clock",
+          "success_clicked_ns": 196370359000000,
+          "motion_start_ns": 196359656000000,
+          "grasped": null,
+          "labelled_at": "2026-11-17T18:03:22.036952"
+        }
+      ]
+    },
+    {
+      "id": "T30",
+      "scene": "S08",
+      "repeat": 1,
+      "variant": "base",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T30-base-attempt1-20261117-180337-510271",
+          "started_at": "20261117-180337-510271",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "success",
+          "reason": "Operator selected success during execution",
+          "completion_s": 13.016,
+          "completion_time_source": "success_button_monotonic_clock",
+          "success_clicked_ns": 196413453000000,
+          "motion_start_ns": 196400437000000,
+          "grasped": null,
+          "labelled_at": "2026-11-17T18:04:05.320247"
+        }
+      ]
+    },
+    {
+      "id": "T31",
+      "scene": "S08",
+      "repeat": 2,
+      "variant": "base",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T31-base-attempt1-20261117-180448-703689",
+          "started_at": "20261117-180448-703689",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": true,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T18:05:42.456494"
+        }
+      ]
+    },
+    {
+      "id": "T32",
+      "scene": "S08",
+      "repeat": 2,
+      "variant": "lora",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T32-lora-attempt1-20261117-180554-469357",
+          "started_at": "20261117-180554-469357",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "success",
+          "reason": "Operator selected success during execution",
+          "completion_s": 15.797,
+          "completion_time_source": "success_button_monotonic_clock",
+          "success_clicked_ns": 196553718000000,
+          "motion_start_ns": 196537921000000,
+          "grasped": null,
+          "labelled_at": "2026-11-17T18:06:25.318709"
+        }
+      ]
+    },
+    {
+      "id": "T33",
+      "scene": "S09",
+      "repeat": 1,
+      "variant": "base",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T33-base-attempt1-20261117-180642-212553",
+          "started_at": "20261117-180642-212553",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": false,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T18:07:36.552279"
+        }
+      ]
+    },
+    {
+      "id": "T34",
+      "scene": "S09",
+      "repeat": 1,
+      "variant": "lora",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T34-lora-attempt1-20261117-180749-011688",
+          "started_at": "20261117-180749-011688",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "success",
+          "reason": "Operator selected success during execution",
+          "completion_s": 5.515,
+          "completion_time_source": "success_button_monotonic_clock",
+          "success_clicked_ns": 196657968000000,
+          "motion_start_ns": 196652453000000,
+          "grasped": null,
+          "labelled_at": "2026-11-17T18:08:09.826746"
+        }
+      ]
+    },
+    {
+      "id": "T35",
+      "scene": "S09",
+      "repeat": 2,
+      "variant": "lora",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T35-lora-attempt1-20261117-180836-457241",
+          "started_at": "20261117-180836-457241",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 1,
+          "outcome": "infrastructure",
+          "reason": "RuntimeError('Insufficient remaining actions for measured latency')",
+          "grasped": null,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T18:09:05.410486"
+        },
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T35-lora-attempt2-20261117-180933-149735",
+          "started_at": "20261117-180933-149735",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": false,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T18:10:22.332230"
+        }
+      ]
+    },
+    {
+      "id": "T36",
+      "scene": "S09",
+      "repeat": 2,
+      "variant": "base",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T36-base-attempt1-20261117-181050-021238",
+          "started_at": "20261117-181050-021238",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": false,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T18:11:47.333544"
+        }
+      ]
+    },
+    {
+      "id": "T37",
+      "scene": "S10",
+      "repeat": 1,
+      "variant": "lora",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T37-lora-attempt1-20261117-181203-383219",
+          "started_at": "20261117-181203-383219",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "success",
+          "reason": "Operator selected success during execution",
+          "completion_s": 16.079,
+          "completion_time_source": "success_button_monotonic_clock",
+          "success_clicked_ns": 196922375000000,
+          "motion_start_ns": 196906296000000,
+          "grasped": null,
+          "labelled_at": "2026-11-17T18:12:34.176452"
+        }
+      ]
+    },
+    {
+      "id": "T38",
+      "scene": "S10",
+      "repeat": 1,
+      "variant": "base",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T38-base-attempt1-20261117-181248-546291",
+          "started_at": "20261117-181248-546291",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": false,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T18:13:57.377468"
+        }
+      ]
+    },
+    {
+      "id": "T39",
+      "scene": "S10",
+      "repeat": 2,
+      "variant": "base",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T39-base-attempt1-20261117-181419-471609",
+          "started_at": "20261117-181419-471609",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "failure",
+          "reason": "",
+          "grasped": false,
+          "completion_s": null,
+          "labelled_at": "2026-11-17T18:15:23.788429"
+        }
+      ]
+    },
+    {
+      "id": "T40",
+      "scene": "S10",
+      "repeat": 2,
+      "variant": "lora",
+      "attempts": [
+        {
+          "directory": "E:\\pi0.5\\results\\blockbox-ab-formal-20261117\\T40-lora-attempt1-20261117-181540-160744",
+          "started_at": "20261117-181540-160744",
+          "health": {
+            "base": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000-blockbox-20261117",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "provenance": {
+                "base_weights_realpath": "/root/autodl-tmp/ira-pi05-v7-full-v2-008000/outputs_V8/train/pi05_6gpu_fsdp_V2/checkpoints/008000/pretrained_model/model.safetensors",
+                "base_weights_sha256": "7f8056e0cebbd8767a93c0f51bf5e20751baad455cf4b9965c07efca2df0fdef",
+                "adapter_applied": false,
+                "processor_source": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+                "processor_sha256": {
+                  "policy_postprocessor.json": "74cc64db243614dadc22fc2a4488fe37f515754f5fe8532055072076b8bf512c",
+                  "policy_postprocessor_step_0_unnormalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71",
+                  "policy_preprocessor.json": "d6c78b6030804722b8fe295af73f968e8b670649576d08a3c2ef4d6d4264ff2d",
+                  "policy_preprocessor_step_2_normalizer_processor.safetensors": "382263ff4d427165c631584f7564876ad3e5892f90d783230ca55a2e1ffd8c71"
+                },
+                "config": {
+                  "dtype": "bfloat16",
+                  "chunk_size": "50",
+                  "n_action_steps": "50",
+                  "num_inference_steps": "10",
+                  "use_peft": "False"
+                },
+                "adapter_sha256": "34152040b57910ffe2b3ed3d80b8fa09fd4e19de73bffcb4892860922e1498cb"
+              },
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            },
+            "lora": {
+              "ready": true,
+              "protocol": "blockbox-guided-rtc-v1",
+              "checkpoint": "/root/autodl-tmp/so101-block-box-lora-run-20261117/checkpoints/020000/pretrained_model",
+              "rtc_enabled": true,
+              "rtc_mode": "guided",
+              "action_shape": [
+                50,
+                6
+              ],
+              "fps": 30,
+              "state_units": "body_degrees_gripper_percent",
+              "action_mean": [
+                -14.52517778383368,
+                -20.65828011277637,
+                31.600665618657768,
+                63.44759647874239,
+                5.678923399326703,
+                19.895546548304065
+              ],
+              "action_std": [
+                14.87951117966291,
+                30.356983715778746,
+                21.179953685246545,
+                16.643614360015317,
+                11.25396452377756,
+                14.086439423423537
+              ]
+            }
+          },
+          "duration_s": 30,
+          "process_exit_code": 0,
+          "outcome": "success",
+          "reason": "Operator selected success during execution",
+          "completion_s": 19.547,
+          "completion_time_source": "success_button_monotonic_clock",
+          "success_clicked_ns": 197157156000000,
+          "motion_start_ns": 197137609000000,
+          "grasped": null,
+          "labelled_at": "2026-11-17T18:16:29.034732"
+        }
+      ]
+    }
+  ],
+  "scenes": {
+    "S01": "123",
+    "S02": "1234",
+    "S03": "11",
+    "S04": "1",
+    "S05": "1",
+    "S06": "2",
+    "S07": "5",
+    "S08": "6",
+    "S09": "9",
+    "S10": "10"
+  },
+  "protocol_changes": [
+    {
+      "at": "2026-11-17T17:29:10.562783",
+      "previous_duration_s": 60,
+      "duration_s": 30,
+      "success_timing": "operator success-button click during motion"
+    }
+  ]
+}

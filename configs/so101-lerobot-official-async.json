@@ -1,0 +1,20 @@
+{
+  "policy_type": "pi05",
+  "pretrained_name_or_path": "/dev/shm/lerobot-pi05-medicine-merged",
+  "robot": {
+    "type": "so101_follower",
+    "port": "COM6",
+    "id": "official_medicine_follower",
+    "use_degrees": false,
+    "cameras": {
+      "base_0_rgb": {"type": "opencv", "index_or_path": 1, "width": 640, "height": 480, "fps": 30},
+      "left_wrist_0_rgb": {"type": "opencv", "index_or_path": 2, "width": 640, "height": 480, "fps": 30}
+    }
+  },
+  "actions_per_chunk": 50,
+  "task": "Pick up the white medicine bottle and place it inside the brown cardboard box.",
+  "server_address": "127.0.0.1:8080",
+  "policy_device": "cuda",
+  "client_device": "cpu",
+  "fps": 30
+}

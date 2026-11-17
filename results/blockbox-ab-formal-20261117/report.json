@@ -1,0 +1,64 @@
+{
+  "base": {
+    "successes": 2,
+    "scored_trials": 20,
+    "success_rate": 0.1,
+    "wilson95_descriptive": [
+      0.027865893984153206,
+      0.30103820641179335
+    ],
+    "successful_completion_median_s": 13.8205,
+    "successful_trials_with_completion_time": 2,
+    "grasped_count": 2,
+    "grasp_labelled_trials": 18,
+    "infrastructure_attempts": 3,
+    "unlabelled_attempts": 0
+  },
+  "lora": {
+    "successes": 11,
+    "scored_trials": 20,
+    "success_rate": 0.55,
+    "wilson95_descriptive": [
+      0.3420820083075997,
+      0.7418049791429071
+    ],
+    "successful_completion_median_s": 13.726500000000001,
+    "successful_trials_with_completion_time": 10,
+    "grasped_count": 3,
+    "grasp_labelled_trials": 10,
+    "infrastructure_attempts": 1,
+    "unlabelled_attempts": 0
+  },
+  "paired": {
+    "complete_pairs": 20,
+    "excluded_pairs": [],
+    "lora_only_success": 9,
+    "base_only_success": 0,
+    "both_success": 2,
+    "both_failure": 9,
+    "success_gain_percentage_points": 45.0
+  },
+  "note": "Pilot study; repeated trials within a scene are correlated. Wilson intervals describe individual rates, not confidence in the paired gain. All infrastructure exclusions remain in the manifest.",
+  "by_duration_s": {
+    "30": {
+      "base": {
+        "successes": 2,
+        "scored_trials": 19
+      },
+      "lora": {
+        "successes": 10,
+        "scored_trials": 19
+      }
+    },
+    "60": {
+      "base": {
+        "successes": 0,
+        "scored_trials": 1
+      },
+      "lora": {
+        "successes": 1,
+        "scored_trials": 1
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+# Install an appropriate PyTorch build separately for your platform.
+# Observed Windows client: Python 3.12, torch 2.8.0+cu128.
+lerobot==0.7.0
+numpy==2.2.6
+opencv-python-headless==4.13.0.92
+pynput==1.8.2
+paramiko>=3,<5
+safetensors==0.8.0
